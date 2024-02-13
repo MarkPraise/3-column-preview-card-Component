@@ -60,7 +60,9 @@
     font-style: normal;
 }
 #sedan{
-   background-color: hsl(31, 77%, 52%); 
+   background-color: hsl(31, 77%, 52%);
+   border-top-left-radius: .7rem;
+   border-top-right-radius: .7rem;
 }
 #sedan button{
     color: hsl(31, 77%, 52%);
@@ -73,6 +75,8 @@
 }
 #luxury{
     background-color: hsl(179, 100%, 13%);
+    border-bottom-left-radius: .7rem;
+    border-bottom-right-radius: .7rem;
 }
 #luxury button{
     color:hsl(179, 100%, 13%) ;
@@ -88,4 +92,34 @@
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+}
+@media (min-width:375px){
+    .cars-Wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 1440px;
+        height: 95vh;
+        margin: auto auto;
+    }
+    #sedan{
+        border-top-left-radius: .7rem;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: .7rem;
+     }
+     #luxury{
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: .7rem;
+        border-top-right-radius: .7rem;
+    }
+    main{
+        position: relative;
+        height: 100vh;
+    }
+    footer{
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        padding-top: 1rem;
+    }
 }
