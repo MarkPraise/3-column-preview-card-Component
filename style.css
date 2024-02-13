@@ -58,7 +58,9 @@
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
+    cursor: pointer;
 }
+
 #sedan{
    background-color: hsl(31, 77%, 52%);
    border-top-left-radius: .7rem;
@@ -67,11 +69,22 @@
 #sedan button{
     color: hsl(31, 77%, 52%);
 }
+#sedan button:hover{
+    color: hsla(0, 0%, 100%, 0.75);
+    border:2px solid  hsla(0, 0%, 100%, 0.75);
+    background-color:  hsl(31, 77%, 52%);
+}
 #suv{
     background-color: hsl(184, 100%, 22%);
 }
 #suv button{
     color: hsl(184, 100%, 22%);
+}
+#suv button:hover{
+    color: hsla(0, 0%, 100%, 0.75);
+    border:2px solid  hsla(0, 0%, 100%, 0.75);
+    background-color: hsl(184, 100%, 22%);
+   
 }
 #luxury{
     background-color: hsl(179, 100%, 13%);
@@ -80,6 +93,12 @@
 }
 #luxury button{
     color:hsl(179, 100%, 13%) ;
+}
+#luxury button:hover{
+    color: hsla(0, 0%, 100%, 0.75);
+    border:2px solid  hsla(0, 0%, 100%, 0.75);
+    background-color: hsl(179, 100%, 13%);
+    
 }
 .attribution {
     font-size: 15px;
